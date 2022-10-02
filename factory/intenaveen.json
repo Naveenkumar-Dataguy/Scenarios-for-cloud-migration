@@ -1,0 +1,9 @@
+{
+	"name": "intenaveen",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3e6fd20c-a502-4aac-957f-c179e8a8fae0",
+		"tenantId": "9b7cbd77-6d6b-4879-8aba-63d7dfb18472"
+	}
+}
