@@ -1,0 +1,12 @@
+{
+	"name": "untill",
+	"properties": {
+		"variables": {
+			"file_check": {
+				"type": "Boolean",
+				"defaultValue": false
+			}
+		},
+		"annotations": []
+	}
+}
