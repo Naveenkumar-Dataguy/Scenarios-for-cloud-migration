@@ -8,9 +8,6 @@
 		"parameters": {
 			"container": {
 				"type": "string"
-			},
-			"blob": {
-				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -18,10 +15,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().blob",
-					"type": "Expression"
-				},
 				"container": {
 					"value": "@dataset().container",
 					"type": "Expression"
