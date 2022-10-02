@@ -20,7 +20,7 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": ".csv",
+							"wildcardFileName": "*.csv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -31,7 +31,7 @@
 						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobStorageWriteSettings",
-							"copyBehavior": "FlattenHierarchy"
+							"copyBehavior": "MergeFiles"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
