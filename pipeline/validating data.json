@@ -1,5 +1,5 @@
 {
-	"name": "copy_modes",
+	"name": "validating data",
 	"properties": {
 		"activities": [
 			{
@@ -20,12 +20,10 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": "*.csv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings",
-							"skipLineCount": 4
+							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
@@ -36,7 +34,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".csv"
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -65,10 +63,16 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "sink",
-							"blob": "testingsink1.csv"
+							"blob": "testing_sink.csv"
 						}
 					}
 				]
+			},
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [],
+				"userProperties": []
 			}
 		],
 		"annotations": []
